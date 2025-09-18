@@ -1,12 +1,13 @@
-export async function up(knex) {
-  return knex.schema.createTable("users", table => {
+exports.up = function (knex) {
+  return knex.schema.createTable("users", function (table) {
     table.increments("id").primary();
     table.string("name").notNullable();
     table.string("email").notNullable().unique();
+    table.boolean("blacklisted").defaultTo(false); // 👈 add this
     table.timestamps(true, true);
   });
-}
+};
 
-export async function down(knex) {
+exports.down = function (knex) {
   return knex.schema.dropTable("users");
-}
+};
