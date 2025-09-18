@@ -1,7 +1,7 @@
 {
   "name": "lendsqr-wallet",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "keywords": [],
   "author": "",
   "license": "ISC",
