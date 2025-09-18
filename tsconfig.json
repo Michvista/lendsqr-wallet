@@ -2,8 +2,8 @@
   // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
     // File Layout
-    // "rootDir": "./src",
-    // "outDir": "./dist",
+    "rootDir": "./",
+    "outDir": "./dist",
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
@@ -15,7 +15,7 @@
     // For nodejs:
     // "lib": ["esnext"],
     "types": ["node", "jest"],
-     "outDir": "./dist",
+    //  "outDir": "./dist",
     // and npm install -D @types/node
 
     // Other Outputs
@@ -26,8 +26,8 @@
     // Stricter Typechecking Options
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
-     "allowImportingTsExtensions": true,
-    "noEmit": true, // or use "emitDeclarationOnly": true
+    //  "allowImportingTsExtensions": true,
+    "noEmit": false, 
 
 
     // Style Options
